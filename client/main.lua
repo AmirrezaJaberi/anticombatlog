@@ -4,7 +4,7 @@ AddEventHandler('esx_anticombatlog:PlayerDisconnect', function (data)
     local pcoords = GetEntityCoords(ppeds)
     local distence = Vdist2(pcoords.x, pcoords.y, pcoords.z, data.pos.x, data.pos.y, data.pos.z)
     if distence < 30 then
-        sendMessage('Player : ^3'..data.name..'^1(^2'..data.src..'^1) Az Server Karej Shod Be Dalil : ^3'..data.resson..'')
+        sendMessage('Player : ^3'..data.name..'^1(^2'..data.src..'^1) Left Server , Resson : ^3'..data.resson..'')
     end
 end)
 
